@@ -11,6 +11,7 @@ const port = 3000;
 
 app.use(bodyParser.urlencoded({extended: true}));
 
+// using custom middleware
 app.use(bandNameGenerator);
 
 app.get("/", (req, res) => {
